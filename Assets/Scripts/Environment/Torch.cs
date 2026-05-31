@@ -22,8 +22,8 @@ public class Torch : MonoBehaviour
     public void LightUp()
     {
         if (IsLit) return;
-        IsLit = true;
-        //EventBusManager.RaiseLightChange(true);
+        IsLit = true; 
+        EventBusManager.RaiseLightChange(true);
     }
 
     private void HandleTorchLit(bool state)
